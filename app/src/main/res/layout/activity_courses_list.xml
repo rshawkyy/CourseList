@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoursesListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/and_im"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:contentDescription="@string/and_text"
+            android:src="@drawable/android"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/android_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_corners"
+            android:onClick="onClick"
+            android:text="ANDROID COURSES "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/and_im" />
+
+        <ImageView
+            android:id="@+id/ios_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:contentDescription="@string/ios_text"
+            android:src="@drawable/ios"
+            app:layout_constraintTop_toBottomOf="@+id/android_btn" />
+
+        <Button
+            android:id="@+id/ios_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_corners"
+            android:onClick="onClick"
+            android:text="IOS COURSES"
+            app:layout_constraintTop_toBottomOf="@+id/ios_pic" />
+
+        <ImageView
+            android:id="@+id/full_stack_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/fullstack_text"
+            android:onClick="onClick"
+            android:src="@drawable/full_stack"
+            app:layout_constraintTop_toBottomOf="@+id/ios_btn" />
+
+        <Button
+            android:id="@+id/fullStack_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_corners"
+            android:onClick="onClick"
+            android:text="FULL STACK"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_stack_img"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
